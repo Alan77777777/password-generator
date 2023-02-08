@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Karla:wght@800&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@800&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="./normalize.css">
+    <link rel="stylesheet" href="./index.css">
+    <link rel="icon" href="./passIcon.ico">
+    <title>Pasword Generator</title>
+</head>
+
+<body>
+    <div class="container">
+        <div class="sub-container">
+            <div class="firstBox">
+                <h1>Generate a <br> <span>random password</span></h1>
+                <p>Never use an insecure password again.</p>
+                <div class="configBox">
+                    <ul>
+                        <li>
+                            <p>Length</p>
+                            <input id="length" type="number" min="1" max="91" value="15">
+                        </li>
+                        <li>
+                            <p>Symbols ON/OFF</p>
+                            <input checked id="symbols" type="checkbox">
+                        </li>
+                    </ul>
+                </div>
+                <button onclick="generate()">Generate passwords</button>
+            </div>
+            <hr>
+            <div class="secondBox">
+                <ul>
+                    <li id="firstPass" onclick="copy1()"></li>
+                    <li id="secondPass" onclick="copy2()"></li>
+                </ul>
+            </div>
+        </div>
+    </div>
+    <script src="./index.js"></script>
+</body>
+
+</html>

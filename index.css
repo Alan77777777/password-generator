@@ -1,0 +1,217 @@
+* {
+    list-style: none;
+}
+
+body {
+    background-color: #161d29;
+}
+
+h1 {
+    font-family: 'Karla', sans-serif;
+    font-style: normal;
+    font-weight: 800;
+    font-size: 40px;
+    line-height: 40px;
+    color: #FFFFFF;
+    margin: 0px;
+    margin-bottom: 10px;
+}
+
+span {
+    color: #4ADF86;
+}
+
+.firstBox p {
+    color: #D5D4D8;
+    font-size: 20px;
+    line-height: 28px;
+    font-family: 'Inter';
+    font-weight: 400;
+    font-style: normal;
+    margin: 0px;
+    margin-bottom: 25px;
+}
+
+.firstBox {
+    display: flex;
+    flex-direction: column;
+}
+
+button {
+    margin-top: 30px;
+    font-family: 'Inter';
+    padding: 9px 17px 9px 15px;
+    gap: 12px;
+    width: 191px;
+    height: 42px;
+    left: 52px;
+    top: 284px;
+    background: #10B981;
+    /* shadow/sm */
+    box-shadow: 0px 1px 2px rgba(0, 0, 0, 0.05);
+    border-radius: 6px;
+    color: white;
+    border-color: none;
+    border-style: none;
+    margin-bottom: 25px;
+}
+
+button:hover {
+    cursor: pointer;
+}
+
+hr {
+    color: #2F3E53;
+}
+
+.sub-container {
+    max-width: 372px;
+    height: 80px;
+    margin: 0px auto;
+    padding-top: 50px;
+}
+
+.container {
+    max-width: 550px;
+    height: 550px;
+    margin: 30px auto;
+    background-color: #1F2937;
+    border: 5px solid #0d1218;
+    border-radius: 15px;
+}
+
+.secondBox {
+    max-width: 446px;
+    height: 39px;
+}
+
+.secondBox ul {
+    margin-top: 35px;
+    padding: 0px;
+    display: flex;
+    justify-content: space-between;
+}
+
+.secondBox ul li {
+    border-radius: 6px;
+    width: 180px;
+    height: 39px;
+    background-color: #273549;
+    font-family: 'Inter';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 39px;
+    text-align: center;
+    color: #55F991;
+}
+
+.secondBox ul li:hover {
+    cursor: copy;
+}
+
+.configBox ul {
+    padding: 0px;
+    margin: 0px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+.configBox ul li p {
+    margin: 0px;
+    font-family: 'Inter';
+    font-weight: 400;
+    font-style: normal;
+    font-size: 17px;
+}
+
+.configBox ul li {
+    display: flex;
+}
+
+input {
+    border: solid 1px #55F991;
+    background-color: transparent;
+    width: 40px;
+    color: #FFFFFF;
+    font-family: 'Inter';
+    font-weight: 400;
+    font-style: normal;
+    font-size: 17px;
+    margin-left: 10px;
+}
+
+#symbols {
+    width: 23px;
+    height: 23px;
+    margin-top: 1px;
+    appearance: none;
+}
+
+#symbols:checked {
+    background-color: #55F991;
+}
+
+#symbols:hover {
+    cursor: pointer;
+}
+
+
+/* queries */
+
+@media (max-width: 410px) {
+    .secondBox ul {
+        align-items: center;
+        flex-direction: column;
+    }
+    .secondBox ul li {
+        margin-bottom: 15px;
+    }
+    .secondBox ul li:last-of-type {
+        margin-bottom: 0px;
+    }
+    button {
+        align-self: center;
+    }
+    .firstBox {
+        margin: 0px 10px;
+    }
+    hr {
+        margin: 0px 10px;
+    }
+    h1 {
+        text-align: center;
+        margin-bottom: 20px;
+        font-size: 35px;
+    }
+    .firstBox p {
+        text-align: center;
+        font-size: 20px;
+    }
+    .sub-container {
+        padding-top: 15px;
+    }
+}
+
+@media (max-width: 325px) {
+    .configBox ul {
+        flex-direction: column;
+        align-items: center;
+    }
+    .configBox ul li {
+        margin-bottom: 20px;
+    }
+    .configBox ul li:last-of-type {
+        margin-bottom: 0px;
+    }
+    button {
+        margin-bottom: 35px;
+    }
+    .secondBox ul {
+        /* margin-bottom: 15px; */
+    }
+    .container {
+        height: 580px;
+    }
+}
