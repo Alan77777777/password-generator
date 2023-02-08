@@ -15,7 +15,7 @@
 
 ### Links 
 
-🔗 Live Site URL: [https://password-generator-project.app/](https://password-generator-project.app/)
+🔗 Live Site URL: [https://password-generator-solo-project.netlify.app/](https://password-generator-solo-project.netlify.app/)
 
 ### Built with 
 
